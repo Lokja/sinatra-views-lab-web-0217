@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The date is</h1>
+        <% t = Time.new %>
+        <% day = t.day%>
+        <% month = t.month%>
+        <% year = t.year%>
+        <% wday = t.wday%>
+        <% DAYS = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"]%>
+        <% MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]%>
+        <%= "#{DAYS[wday]}, #{MONTHS[month-1]} #{day}, #{year}" %>
+    </body>
+</html>
